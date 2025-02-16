@@ -80,10 +80,10 @@ namespace ZeissProducts.WebAPI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Adding the stocks for the product.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="quantity"></param>
+        /// <param name="id">Product ID</param>
+        /// <param name="quantity">Number of stocks</param>
         /// <returns></returns>
         [HttpPut("add-to-stock/{id:int}/{quantity:int}")]
         public async Task<IActionResult> AddProductStocksAsync(int id, int quantity)
@@ -94,7 +94,7 @@ namespace ZeissProducts.WebAPI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Delete the product from the database.
         /// </summary>
         /// <returns></returns>
         [HttpDelete("{id:int}")]
